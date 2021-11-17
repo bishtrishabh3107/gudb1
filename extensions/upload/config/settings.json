@@ -1,0 +1,8 @@
+{
+  "provider": "cloudinary",
+  "providerOptions": {
+    "cloud_name": "softox",
+    "api_key": "724737738369289",
+    "api_secret": "x52f5a9rGuKr29GclvGve9qVy9Y"
+  }
+}

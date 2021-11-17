@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/featured-brands",
+      "handler": "featured-brands.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/featured-brands/count",
+      "handler": "featured-brands.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/featured-brands/:id",
+      "handler": "featured-brands.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/featured-brands",
+      "handler": "featured-brands.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/featured-brands/:id",
+      "handler": "featured-brands.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/featured-brands/:id",
+      "handler": "featured-brands.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

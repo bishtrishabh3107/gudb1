@@ -1,0 +1,15 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featured_products",
+  "info": {
+    "name": "featuredProducts",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}

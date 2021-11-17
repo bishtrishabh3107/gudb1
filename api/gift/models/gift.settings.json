@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gifts",
+  "info": {
+    "name": "gift"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "giftFor": {
+      "type": "string"
+    },
+    "products": {
+      "via": "gifts",
+      "collection": "product",
+      "dominant": true
+    }
+  }
+}

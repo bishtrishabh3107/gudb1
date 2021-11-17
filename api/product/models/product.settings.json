@@ -1,0 +1,135 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "image1": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "amazon_link": {
+      "type": "string"
+    },
+    "amazon_price": {
+      "type": "integer"
+    },
+    "productID": {
+      "type": "integer"
+    },
+    "rating1": {
+      "type": "integer"
+    },
+    "rating2": {
+      "type": "integer"
+    },
+    "rating3": {
+      "type": "integer"
+    },
+    "image2": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "image3": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "categories": {
+      "via": "products",
+      "collection": "category"
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "keywords": {
+      "type": "text"
+    },
+    "description_short": {
+      "type": "text"
+    },
+    "AO_Name": {
+      "type": "string"
+    },
+    "AO_Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "AO_UID": {
+      "type": "uid",
+      "targetField": "AO_Name"
+    },
+    "AO_Link": {
+      "type": "string"
+    },
+    "AO_Price": {
+      "type": "integer"
+    },
+    "AO_Description": {
+      "type": "richtext"
+    },
+    "inSpotlight": {
+      "type": "boolean"
+    },
+    "productType": {
+      "type": "string"
+    },
+    "gifts": {
+      "via": "products",
+      "collection": "gift"
+    },
+    "featured_brand": {
+      "model": "featured-brands",
+      "via": "product"
+    }
+  }
+}
