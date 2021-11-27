@@ -128,8 +128,8 @@
       "collection": "gift"
     },
     "featured_brand": {
-      "model": "featured-brands",
-      "via": "product"
+      "via": "product",
+      "model": "featured-brands"
     }
   }
 }
