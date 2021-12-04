@@ -126,10 +126,6 @@
     "gifts": {
       "via": "products",
       "collection": "gift"
-    },
-    "featured_brand": {
-      "via": "product",
-      "model": "featured-brands"
     }
   }
 }

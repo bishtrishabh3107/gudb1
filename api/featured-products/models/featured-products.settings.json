@@ -11,5 +11,99 @@
     "draftAndPublish": true
   },
   "pluginOptions": {},
-  "attributes": {}
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "image1": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "image2": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "image3": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "featuredProductID": {
+      "type": "integer"
+    },
+    "featuredProductLink": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "rating1": {
+      "type": "integer"
+    },
+    "rating2": {
+      "type": "integer"
+    },
+    "rating3": {
+      "type": "integer"
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "keywords": {
+      "type": "text"
+    },
+    "description_short": {
+      "type": "text"
+    },
+    "inSpotlight": {
+      "type": "boolean"
+    },
+    "productType": {
+      "type": "string"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "featured_products",
+      "dominant": true
+    },
+    "gifts": {
+      "collection": "gift",
+      "via": "featured_products",
+      "dominant": true
+    },
+    "featured_brand": {
+      "via": "featured_products",
+      "model": "featured-brands"
+    }
+  }
 }

@@ -18,6 +18,10 @@
       "via": "gifts",
       "collection": "product",
       "dominant": true
+    },
+    "featured_products": {
+      "via": "gifts",
+      "collection": "featured-products"
     }
   }
 }

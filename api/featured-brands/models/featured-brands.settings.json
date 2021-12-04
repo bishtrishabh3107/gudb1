@@ -19,10 +19,6 @@
       "type": "uid",
       "targetField": "Name"
     },
-    "product": {
-      "via": "featured_brand",
-      "model": "product"
-    },
     "image": {
       "model": "file",
       "via": "related",
@@ -37,6 +33,13 @@
     },
     "brandNumber": {
       "type": "integer"
+    },
+    "featured_products": {
+      "collection": "featured-products",
+      "via": "featured_brand"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

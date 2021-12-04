@@ -22,6 +22,10 @@
       "via": "categories",
       "collection": "product",
       "dominant": true
+    },
+    "featured_products": {
+      "via": "categories",
+      "collection": "featured-products"
     }
   }
 }
